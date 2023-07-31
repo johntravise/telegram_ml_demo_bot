@@ -31,13 +31,50 @@ This Telegram bot offers various functionalities, including text-based conversat
 
 ## Usage
 
-Users can interact with the bot by sending specific commands. Refer to the `/help` command for detailed usage instructions.
+Users can interact with the bot by sending specific commands. Use the `/help` command to see the available commands:
+
+```plaintext
+Here are the commands I understand:
+
+Basic interaction:
+/start - Start the bot (OpenAI's GPT-4).
+/claude - Generate a response using the Anthropic API (Claude), similar to GPT-4.
+/reset - Reset the current conversation.
+/set_assistant_role <role> - Set the assistant role.
+/history - Show the conversation history.
+*Note: Normal conversation uses OpenAI's ChatGPT-4 for generating responses.
+
+Image Generation & Processing:
+/image - Generate an image based on a text prompt (Stability.ai).
+/text_to_image or /tti - Convert text to an image (ClipDrop API).
+/transform_image - Generate an image using another image as a base (needs an image with a caption).
+/list_style_presets - List available style presets for image generation (Stability.ai).
+/set_style_preset <preset> - Set your preferred style preset for image generation (Stability.ai).
+/leo - Generate an image using Leonardo API based on a text prompt. Type '/leo help' for more information.
+/remove_text_from_image or /rti - Remove text from an image (ClipDrop API).
+
+Text-to-Speech:
+/tts - Convert text into speech (ElevenLabs).
+/set_voice <voice_id> - Set your preferred voice for TTS (ElevenLabs).
+/view_voices - View available TTS voices (ElevenLabs).
+
+Security:
+/check_pwned <email> - Check an email account for breaches.
+/check_pastes <email> - Check an email account for breaches.
+
+Statistics:
+/stats - Show some statistics about the bot.
+
+General:
+/help - Show this help message.
+
+```
 
 ## Installation and Setup
 
 1. **Clone the Repository**: Clone this repository to your local machine.
 2. **Install Dependencies**: Install required dependencies using `pip install -r requirements.txt`.
-3. **Configure Environment Variables**: Modify config.py with yoru API keys.
+3. **Configure Environment Variables**: Add your information / keys to config.py.
 4. **Run the Bot**: Execute the `main.py` script to start the bot.
 
 ## Contributing
